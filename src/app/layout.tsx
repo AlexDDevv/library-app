@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "../src/assets/style/globals.css"
-import "../src/assets/style/main.css";
+import "../assets/style/globals.css"
+import "../assets/style/main.css";
 
 export const metadata: Metadata = {
     title: "Library App",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="bg-bgApp max-w-[1440px] mx-auto my-0 py-5">{children}</body>
+            <body className="bg-background max-w-[1440px] mx-auto my-0 py-5">{children}</body>
         </html>
     );
 }
