@@ -2,25 +2,34 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
     content: [
-        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./pages/**/*.{ts,tsx}",
+        "./components/**/*.{ts,tsx}",
+        "./app/**/*.{ts,tsx}",
+        "./src/**/*.{ts,tsx}",
     ],
     theme: {
         extend: {
             colors: {
-                bgApp: "#FEFDFC",
-                bgSub: "#FCF9F6",
-                bgItem: "#F6EEE7",
-                hoverItem: "#F0E4D9",
-                activeItem: "#EBDACA",
-                border: "#E4CDB7",
-                outline: "#DCBC9F",
-                hoverBorder: "#CEA37E",
-                bgBtn: "#AD7F58",
-                hoverBtn: "#A07553",
-                text: "#815E46",
-                title: "#3E332E"
+                "background": "hsl(var(--background))",
+                "foreground": "hsl(var(--foreground))",
+                "muted": "hsl(var(--muted))",
+                "muted-foreground": "hsl(var(--muted-foreground))",
+                "popover": "hsl(var(--popover))",
+                "popover-foreground": "hsl(var(--popover-foreground))",
+                "card": "hsl(var(--card))",
+                "card-foreground": "hsl(var(--card-foreground))",
+                "border": "hsl(var(--border))",
+                "input": "hsl(var(--input))",
+                "primary": "hsl(var(--primary))",
+                "primary-foreground": "hsl(var(--primary-foreground))",
+                "secondary": "hsl(var(--secondary))",
+                "secondary-foreground": "hsl(var(--secondary-foreground))",
+                "accent": "hsl(var(--accent))",
+                "accent-foreground": "hsl(var(--accent-foreground))",
+                "destructive": "hsl(var(--destructive))",
+                "destructive-foreground": "hsl(var(--destructive-foreground))",
+                "ring": "hsl(var(--ring))",
+                "radius": "var(--radius)"
             },
             fontFamily: {
                 titleFont: ["Roboto", "sans-serif"],
