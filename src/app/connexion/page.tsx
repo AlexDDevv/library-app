@@ -1,8 +1,16 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import googleIcon from "../../assets/img/googleIcon.png"
+import { useRouter } from 'next/navigation'
 
 export default function Connexion() {
+    const router = useRouter()
+
+    const registerPage = () => {
+        router.push("/inscription")
+    }
+
     return (
         <section className='flex flex-col items-center justify-center pt-16'>
             <h1 className='text-2xl font-titleFont text-foreground font-bold mb-10'>Connexion</h1>
@@ -42,7 +50,7 @@ export default function Connexion() {
                     Google
                 </button>
             </form>
-            <p className='text-muted-foreground'>Tu n'as pas encore de compte? <span className='text-primary font-medium cursor-pointer transition-colors hover:text-primary/90'>Inscris toi!</span></p>
+            <p className='text-muted-foreground'>Tu n'as pas encore de compte? <span className='text-primary font-medium cursor-pointer transition-colors hover:text-primary/90' onClick={registerPage}>Inscris toi!</span></p>
         </section>
     )
 }
