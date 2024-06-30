@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import RegisterBtn from './SignInBtn'
+import RegisterBtn from './ui/SignInBtn'
 import { Github, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
