@@ -1,11 +1,18 @@
 'use client'
 import Header from "../components/Header";
-import SignInBtn from "@/components/SignInBtn";
+import ShinyButton from "@/components/ui/ShinyButton";
 import banner from "../assets/img/banner.webp"
 import Image from "next/image";
 import Footer from "../components/Footer";
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
+    const router = useRouter()
+
+    const RegisterBtn = () => {
+        router.push("/inscription")
+    }
+
     return (
         <main>
             <Header />
@@ -13,7 +20,10 @@ export default function Home() {
                 <div className="flex flex-col items-center justify-center gap-5 mb-[100px]">
                     <h1 className="font-titleFont text-accent-foreground font-bold text-7xl flex flex-col gap-5">Reprends goût <span className="text-foreground">à la lecture</span></h1>
                     <p className="font-bodyFont text-accent-foreground max-w-[700px] mx-auto my-0">Replongez dans l'univers captivant des livres et redécouvrez le plaisir de la lecture. Améliorez votre concentration, stimulez votre imagination, améliorez votre sommeil et réduisez votre stress quotidien en vous immergeant dans des histoires passionnantes!</p>
-                    <SignInBtn />
+                    <ShinyButton 
+                        text="S'inscrire"
+                        registerBtn={RegisterBtn}
+                    />
                 </div>
                 <div className="w-full mx-auto my-0">
                     <Image
