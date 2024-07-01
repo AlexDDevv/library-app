@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../assets/style/globals.css"
 import "../assets/style/main.css";
+import { ClientProvider } from "@/components/ClientProvider";
 
 export const metadata: Metadata = {
     title: "Library App",
@@ -14,7 +15,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="bg-background max-w-[1440px] mx-auto my-0 py-5">{children}</body>
+            <body className="bg-background max-w-[1440px] mx-auto my-0 py-5">
+                <ClientProvider>
+                    {children}
+                </ClientProvider>
+            </body>
         </html>
     );
 }
