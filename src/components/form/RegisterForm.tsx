@@ -58,7 +58,7 @@ export default function RegisterForm({ signInPage }: RegisterFormProps) {
                             className='flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
                         />
                         {errors.email && (
-                            <div className='text-red-500'>{errors.email.message}</div>
+                            <div className='text-destructive'>{errors.email.message}</div>
                         )}
                     </div>
                     <div className='flex flex-col gap-2 mb-5'>
@@ -70,7 +70,7 @@ export default function RegisterForm({ signInPage }: RegisterFormProps) {
                             className='flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
                         />
                         {errors.userName && (
-                            <div className='text-red-500'>{errors.userName.message}</div>
+                            <div className='text-destructive'>{errors.userName.message}</div>
                         )}
                     </div>
                     <div className='flex flex-col gap-2 mb-5'>
@@ -82,7 +82,7 @@ export default function RegisterForm({ signInPage }: RegisterFormProps) {
                             className='flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
                         />
                         {errors.password && (
-                            <div className='text-red-500'>{errors.password.message}</div>
+                            <div className='text-destructive'>{errors.password.message}</div>
                         )}
                     </div>
                 </div>
