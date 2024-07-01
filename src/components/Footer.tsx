@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import RegisterBtn from './ui/SignInBtn'
+import RegisterBtn from './ui/NavBarBtn'
 import { Github, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
@@ -23,7 +23,7 @@ export default function Footer() {
     ]
 
     return (
-        <footer className='flex items-center justify-between w-[65%] my-0 mx-auto border border-border rounded-xl py-4 px-5'>
+        <footer className='bg-card flex items-center justify-between w-[65%] my-0 mx-auto border border-border rounded-xl py-4 px-5'>
             <Logo />
             <RegisterBtn />
             <ul className='flex items-center justify-center gap-5'>
