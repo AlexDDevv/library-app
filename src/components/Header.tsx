@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
-import SignInBtn from './ui/SignInBtn'
+import NavBarBtn from './ui/NavBarBtn'
 
 export default function Header() {
     return (
@@ -20,7 +20,7 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-            <SignInBtn />
+            <NavBarBtn />
         </header>
     )
 }
