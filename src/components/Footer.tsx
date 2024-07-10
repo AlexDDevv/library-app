@@ -12,7 +12,7 @@ export default function Footer() {
         },
         {
             "id": "linkedin",
-            "link": "https://www.linkedin.com/in/alexis-delporte-8371362b8/",
+            "link": "https://www.linkedin.com/in/alexis-delporte/",
             "icon": <Linkedin className='text-card-foreground transition hover:scale-105 hover:text-white' />
         },
         {
