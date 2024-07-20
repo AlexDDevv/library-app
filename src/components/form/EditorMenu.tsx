@@ -7,7 +7,7 @@ interface EditorMenuProps {
 
 export default function EditorMenu({ closeEditor }: EditorMenuProps) {
     return (
-        <div className='text-white bg-popover rounded-[10px] p-6 w-1/2 mx-auto editorPos z-50'>
+        <div className='text-white bg-popover rounded-[10px] p-6 w-1/2 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'>
             <div className='flex items-start justify-between mb-[30px]'>
                 <div>
                     <h3 className='font-titleFont font-medium text-lg text-popover-foreground'>Éditer votre profil</h3>
