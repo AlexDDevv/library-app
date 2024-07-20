@@ -23,7 +23,7 @@ export default function Footer() {
     ]
 
     return (
-        <footer className='bg-card flex items-center justify-between w-[65%] my-0 mx-auto border border-border rounded-xl py-4 px-5'>
+        <footer className='bg-card flex items-center justify-between max-w-[1440px] my-0 mx-auto border border-border rounded-xl py-4 px-5'>
             <Logo />
             <RegisterBtn />
             <ul className='flex items-center justify-center gap-5'>
