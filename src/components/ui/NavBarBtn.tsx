@@ -14,7 +14,7 @@ export default function NavBarBtn() {
 
     return (
         <>
-            {pathname === "/userProfile" ? (
+            {pathname === "/userProfile" && session ? (
                 <button
                     className='bg-destructive py-[5px] px-4 text-destructive-foreground font-semibold rounded-md cursor-pointer'
                     onClick={() => signOut({
