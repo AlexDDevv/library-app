@@ -1,8 +1,10 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import { useSession, signIn } from "next-auth/react";
+import { usePathname } from 'next/navigation'
+import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function NavBarBtn() {
+    const pathname = usePathname()
     const { data: session } = useSession();
     const router = useRouter()
 
@@ -11,6 +13,20 @@ export default function NavBarBtn() {
     }
 
     return (
-        <button className='bg-primary py-2 px-4 text-primary-foreground font-semibold rounded-md cursor-pointer w-[130px]' onClick={!session ? () => signIn() : profilePage}>{!session ? "Se connecter" : "Profil"}</button>
+        <>
+            {pathname === "/userProfile" ? (
+                <button
+                    className='bg-destructive py-[5px] px-4 text-destructive-foreground font-semibold rounded-md cursor-pointer'
+                    onClick={() => signOut({
+                        redirect: true,
+                        callbackUrl: "/"
+                    })}
+                >Déconnexion
+                </button>
+            ) : (
+                <button className='bg-primary py-[5px] px-4 text-primary-foreground font-semibold rounded-md cursor-pointer w-[130px]' onClick={!session ? () => signIn() : profilePage}>{!session ? "Se connecter" : "Profil"}</button>
+            )
+            }
+        </>
     )
 }
