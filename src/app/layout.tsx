@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="bg-background max-w-[1440px] mx-auto my-0 py-5">
+            <body className="bg-background py-[50px]">
                 <ClientProvider>
                     {children}
                 </ClientProvider>
