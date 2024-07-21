@@ -4,6 +4,7 @@ import { useSession } from "next-auth/react";
 import Header from '@/components/Header';
 import NavBarBtn from '@/components/ui/NavBarBtn';
 import EditorMenu from '@/components/form/EditorMenu';
+import FavBooks from '@/components/ui/FavBooks';
 import Footer from '@/components/Footer';
 import { ImagePlus } from "lucide-react"
 import Link from 'next/link';
@@ -47,19 +48,8 @@ export default function page() {
                         </div>
                         <div>
                             <h1 className='font-titleFont font-bold text-xl text-foreground tracking-widest text-center uppercase mb-[50px]'>Mes livres favoris</h1>
-                            <div className='flex items-center justify-between gap-5 w-full'>
-                                <div className='bg-card rounded-[10px] w-[250px] h-[430px] shadow-[0_5px_5px_2px_rgb(0,0,0,0.25)]'>
-
-                                </div>
-                                <div className='bg-card rounded-[10px] w-[250px] h-[430px] shadow-[0_5px_5px_2px_rgb(0,0,0,0.25)]'>
-
-                                </div>
-                                <div className='bg-card rounded-[10px] w-[250px] h-[430px] shadow-[0_5px_5px_2px_rgb(0,0,0,0.25)]'>
-
-                                </div>
-                                <div className='bg-card rounded-[10px] w-[250px] h-[430px] shadow-[0_5px_5px_2px_rgb(0,0,0,0.25)]'>
-
-                                </div>
+                            <div className='flex items-center justify-center gap-5 w-full'>
+                                <FavBooks />
                             </div>
                         </div>
                     </section>
