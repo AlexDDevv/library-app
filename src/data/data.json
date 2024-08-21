@@ -1,4 +1,18 @@
 {
+    "navLink": [
+        {
+            "link": "/livres",
+            "content": "Livres"
+        },
+        {
+            "link": "/auteurs",
+            "content": "Auteurs"
+        },
+        {
+            "link": "/bibliotheque",
+            "content": "Bibliothèque"
+        }
+    ],
     "socialLink": [
         {
             "link": "https://github.com/AlexDDevv",
