@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import data from "../data/data.json"
 import Link from 'next/link'
+import ResearchForm from './form/ResearchForm'
 import NavBarBtn from './ui/NavBarBtn'
 
 export default function Header() {
@@ -16,6 +17,7 @@ export default function Header() {
                         </li>
                     ))}
                 </ul>
+                <ResearchForm />
             </nav>
             <NavBarBtn />
         </header>
